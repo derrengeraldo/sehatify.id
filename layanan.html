@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Layanan Kami - SehatIfy</title>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="csslayanan.css">
+</head>
+<body>
+
+    <header>
+        <div class="logo-text">SehatIfy</div>
+        <ul class="nav-links">
+            <li><a href="index.html">Beranda</a></li>
+            <li><a href="tentang.html">Tentang</a></li>
+            <li><a href="layanan.html" style="color: var(--accent-gold); font-weight: 600;">Layanan</a></li>
+        </ul>
+        <a href="daftar.html" class="btn-primary" style="display: inline-block; text-align: center;">Daftar Sekarang</a>
+    </header>
+
+    <section class="services-hero">
+        <div class="container">
+            <h1>Layanan Komprehensif Kami</h1>
+            <p>Kami menyediakan berbagai pintu masuk menuju perubahan hidup yang lebih baik.</p>
+        </div>
+    </section>
+
+        <section class="water-tracker-section">
+            <div class="tracker-container">
+                <h2>Kalkulator Hidrasi SehatIfy</h2>
+                <p>Cari tahu berapa banyak air minum yang dibutuhkan tubuhmu setiap hari berdasarkan berat badan.</p>
+                
+                <div class="input-group">
+                    <label for="weightInput">Berat Badanmu (kg):</label>
+                    <input type="number" id="weightInput" placeholder="Contoh: 50" min="20" max="200">
+                    <button id="calcBtn" class="btn-tracker">Hitung Kebutuhan</button>
+                </div>
+
+                <div id="resultBox" class="result-box hidden">
+                    <h3>Kebutuhan Airmu: <span id="waterResult">0</span> Liter / Hari</h3>
+                    <p id="tipsText" style="font-size: 0.9rem; color: #555; margin-top: 10px;"></p>
+                    
+                    <div class="progress-area">
+                        <button id="drinkBtn" class="btn-drink">🥛 Saya Sudah Minum 1 Gelas (250ml)</button>
+                        <p>Progress: <span id="progressText">0</span> dari <span id="targetText">0</span> Liter</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="health-pillars-section">
+            <div class="pillars-container">
+                <h2> 3 Pilar Gaya Hidup Sehat</h2>
+                <p class="pillars-subtitle">Pilih salah satu di bawah ini untuk melihat panduan langkah kecil harianmu.</p>
+
+                <div class="tab-menu">
+                    <button class="tab-btn active" onclick="bukaPilar(event, 'makan')">🍲 Pola Makan</button>
+                    <button class="tab-btn" onclick="bukaPilar(event, 'tidur')">😴 Istirahat/Tidur</button>
+                    <button class="tab-btn" onclick="bukaPilar(event, 'olahraga')">🏃‍♂️ Olahraga</button>
+                </div>
+
+                <div id="makan" class="tab-content aktif">
+                    <h3>Mindful Eating (Makan dengan Kesadaran)</h3>
+                    <p>Bukan tentang mengurangi porsi makan secara ekstrem, tapi tentang memberikan nutrisi terbaik yang dibutuhkan oleh tubuhmu dengan rasa bahagia.</p>
+                    <ul class="pillar-list">
+                        <li>Kurangi makanan cepat saji secara bertahap.</li>
+                        <li>Perbanyak variasi warna di piringmu (sayur dan buah).</li>
+                        <li>Kunyah makanan lebih lambat agar pencernaan bekerja optimal.</li>
+                    </ul>
+                </div>
+
+                <div id="tidur" class="tab-content">
+                    <h3>Deep Sleep (Kualitas Istirahat)</h3>
+                    <p>Tidur adalah cara tubuh dan pikiranmu melakukan *restart* dan menyembuhkan diri setelah seharian beraktivitas berat.</p>
+                    <ul class="pillar-list">
+                        <li>Usahakan tidur konsisten 7-8 jam setiap malam.</li>
+                        <li>Matikan atau jauhkan *smartphone* 30 menit sebelum tidur.</li>
+                        <li>Buat suasana kamar seadanya, redup, dan sejuk.</li>
+                    </ul>
+                </div>
+
+                <div id="olahraga" class="tab-content">
+                    <h3>Active Movement (Gerak Aktif harian)</h3>
+                    <p>Kamu tidak harus langsung pergi ke *gym* atau angkat beban berat. Kuncinya adalah membuat tubuhmu tetap aktif bergerak setiap hari.</p>
+                    <ul class="pillar-list">
+                        <li>Coba jalan kaki ringan selama 15-20 menit sehari.</li>
+                        <li>Lakukan peregangan (*stretching*) otot di sela-sela waktu belajar.</li>
+                        <li>Pilih jenis aktivitas fisik yang paling kamu senangi (sepeda, badminton, dll).</li>
+                    </ul>
+                </div>
+
+            </div>
+        </section>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-brand">
+                <img src="LOGO ICB CN.jpg" alt="Logo SMK ICB" class="footer-logo">
+            </div>
+            <ul class="footer-nav">
+                <li><a href="index.html">Beranda</a></li>
+                <li><a href="tentang.html">Tentang</a></li>
+                <li><a href="layanan.html">Layanan</a></li>
+            </ul>
+            <div class="footer-title-side">
+                <p class="footer-title-text">SehatIfy</p>
+                <p class="footer-tagline">Student Today Leader Tomorrow</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            &copy; 2026 SehatIfy - Kelompok 5.
+        </div>
+    </footer>
+    
+    <script src="scriptlayanan.js"></script>
+</body>
+</html>

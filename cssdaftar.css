@@ -1,0 +1,100 @@
+/* =========================================================
+   CSS KHUSUS HALAMAN DAFTAR BIODATA (cssdaftar.css)
+   ========================================================= */
+
+.register-section {
+    padding: 60px 5%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: calc(100vh - 200px); /* Memastikan form berada di tengah layar */
+}
+
+.register-container {
+    background-color: white; /* Kontras bersih seperti struktur konten beranda */
+    padding: 40px;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(26, 42, 64, 0.05); /* Shadow tipis warna primary-blue */
+    max-width: 500px;
+    width: 100%;
+    text-align: center;
+}
+
+.register-container h2 {
+    font-family: 'Playfair Display', serif;
+    color: var(--primary-blue);
+    margin-bottom: 10px;
+}
+
+.register-container p {
+    font-size: 0.95rem;
+    color: #666;
+    margin-bottom: 30px;
+}
+
+/* --- TATA LETAK FORMULIR --- */
+.form-biodata {
+    text-align: left; /* Teks label rata kiri agar rapi */
+}
+
+.form-group {
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.form-group label {
+    font-size: 0.9rem;
+    font-weight: 500;
+    color: var(--primary-blue);
+}
+
+.form-group input, 
+.form-group select {
+    padding: 12px 15px;
+    border: 2px solid #e2e8f0;
+    border-radius: 10px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 0.95rem;
+    color: var(--text-dark);
+    outline: none;
+    background-color: var(--bg-cream); /* Input box menggunakan warna dasar cream web */
+    transition: 0.3s;
+}
+
+/* Efek interaktif saat kotak input/pilihan diklik */
+.form-group input:focus, 
+.form-group select:focus {
+    border-color: var(--primary-blue);
+    background-color: white;
+}
+
+/* Tombol Kirim Form (Gaya modifikasi dari .btn-primary) */
+.btn-submit-form {
+    background-color: var(--primary-blue);
+    color: white;
+    padding: 14px;
+    width: 100%;
+    border: none;
+    border-radius: 25px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    font-size: 1rem;
+    cursor: pointer;
+    margin-top: 10px;
+    transition: 0.3s;
+}
+
+.btn-submit-form:hover {
+    background-color: #2c3e50;
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(26, 42, 64, 0.2);
+}
+
+/* Responsif untuk HP */
+@media (max-width: 480px) {
+    .register-container {
+        padding: 30px 20px;
+    }
+}

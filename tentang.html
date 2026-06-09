@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tentang Kami - SehatIfy</title>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .story-section { padding: 100px 0; background: #fff; }
+        .story-container { max-width: 800px; margin: 0 auto; text-align: center; }
+        
+        .philosophy-card { 
+            background: var(--primary-blue); 
+            color: white; 
+            padding: 50px; 
+            border-radius: 30px; 
+            margin-top: 50px;
+            text-align: left;
+        }
+        .philosophy-card h2 { color: var(--accent-gold); margin-bottom: 20px; }
+        
+        /* --- STYLE BARU UNTUK TUJUAN & TIM --- */
+        .purpose-box {
+            text-align: left;
+            margin-top: 50px;
+            padding: 30px;
+            background-color: var(--bg-cream);
+            border-radius: 20px;
+        }
+        .purpose-box h2 { margin-bottom: 15px; }
+
+        .team-section { margin-top: 60px; text-align: left; }
+        .team-section h2 { text-align: center; margin-bottom: 30px; }
+        .team-grid { 
+            display: grid; 
+            grid-template-columns: repeat(4, 1fr); 
+            gap: 20px; 
+            margin-top: 20px; 
+        }
+        .member-card {
+            background: #fff;
+            border: 1px solid #e0e0e0;
+            padding: 20px;
+            border-radius: 15px;
+            text-align: center;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+        }
+        .member-avatar {
+            width: 80px;
+            height: 80px;
+            background: #ddd;
+            border-radius: 50%;
+            margin: 0 auto 15px;
+        }
+
+        .vision-mission { display: grid; grid-template-columns: 1fr 1fr; gap: 40px; margin-top: 60px; }
+        .quote { font-style: italic; font-size: 1.5rem; color: var(--primary-blue); margin: 40px 0; }
+
+        @media (max-width: 768px) {
+            .team-grid { grid-template-columns: repeat(2, 1fr); }
+            .vision-mission { grid-template-columns: 1fr; }
+        }
+        @media (max-width: 480px) {
+            .team-grid { grid-template-columns: 1fr; }
+        }
+        .avatar-img {
+            width: 100%;
+            height: 100%;
+            border-radius: 50%;
+            object-fit: cover; /* Biar foto gak gepeng/ketarik */
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="logo-text">SehatIfy</div>
+        <ul class="nav-links">
+            <li><a href="index.html">Beranda</a></li>
+            <li><a href="tentang.html" style="color: var(--accent-gold); font-weight: 600;">Tentang</a></li>
+            <li><a href="layanan.html">Layanan</a></li>
+        </ul>
+        <a href="daftar.html" class="btn-primary" style="display: inline-block; text-align: center;">Daftar Sekarang</a>
+    </header>
+
+    <section class="story-section container">
+        <div class="story-container">
+            <h1 style="font-size: 3.5rem; margin-bottom: 30px;">Lebih dari Sekadar Angka di Timbangan.</h1>
+            <p class="quote">"Kesehatan bukanlah sebuah tujuan akhir, melainkan kendaraan yang membawamu menikmati indahnya perjalanan hidup."</p>
+            
+            <p>Banyak dari kita terjebak dalam stigma bahwa hidup sehat adalah tentang larangan, rasa lapar, dan hasil instan dalam semalam. Di <strong>SehatIfy</strong>, kami percaya sebaliknya.</p>
+            
+            <div class="philosophy-card">
+                <h2>Filosofi Kami: Langkah Kecil, Dampak Besar</h2>
+                <p>SehatIfy lahir dari sebuah kesadaran sederhana: bahwa setiap tubuh memiliki ceritanya sendiri. Kami tidak ingin kamu berlari marathon jika hari ini kamu hanya sanggup berjalan kaki. Kami tidak menuntut kesempurnaan, kami merayakan <strong>kemajuan</strong>.</p>
+                <br>
+                <p>Hidup sehat adalah sebuah proses mengalir yang harmonis antara nutrisi yang baik, ketenangan pikiran, dan kebiasaan yang dilakukan dengan rasa bahagia, bukan paksaan.</p>
+            </div>
+
+            <div class="purpose-box">
+                <h2>Tujuan SehatIfy</h2>
+                <p>
+                    Website ini dibangun sebagai solusi digital interaktif untuk membantu masyarakat—khususnya generasi muda—menemukan ritme hidup sehat mereka sendiri tanpa merasa tertekan. Kami bertujuan mempermudah akses edukasi nutrisi, menyediakan ruang konsultasi yang hangat, serta membangun komunitas yang saling mendukung dalam proses bertumbuh.
+                    </p>
+            </div>
+
+            <div class="team-section">
+                <h2>Di Balik Layar SehatIfy</h2>
+                <p style="text-align: center;">Anggota <b>Kelompok 5</b></p>
+                
+                <div class="team-grid">
+                    <div class="member-card">
+                        <div class="member-avatar"><img src="avatar test.jfif" alt="Foto Ali Fikri" class="avatar-img"></div> 
+                        <h4>Ali Fikri</h4>
+                        <p style="font-size: 0.85rem; color: #07672d;">
+                            Tampilan (CSS)
+                            </p>
+                        <p style="font-size: 0.85rem; color: #666;">
+                            <a href="https://www.instagram.com/lieeyy_00/?utm_source=ig_web_button_share_sheet">Instagram</a>
+                        </p>
+                    </div>
+
+                    <div class="member-card">
+                        <div class="member-avatar"><img src="avatar test.jfif" alt="Foto Ali Fikri" class="avatar-img"></div>
+                        <h4>Derren Tristan G.</h4>
+                        <p style="font-size: 0.85rem; color: #07672d;">
+                            Kerangka & Tampilan (HTML & CSS)
+                            </p>
+                        <p style="font-size: 0.85rem; color: #666;">
+                            <a href="https://www.instagram.com/derrentristaan/?utm_source=ig_web_button_share_sheet">Instagram</a>
+                            </p>
+                    </div>
+
+                    <div class="member-card">
+                        <div class="member-avatar"><img src="avatar test.jfif" alt="Foto Ali Fikri" class="avatar-img"></div>
+                        <h4>Qisya Qurota A. R.</h4>
+                        <p style="font-size: 0.85rem; color: #07672d;">
+                            Isi Halaman & Ide Halaman (HTML)
+                            </p>
+                        <p style="font-size: 0.85rem; color: #666;">
+                            <a href="https://www.instagram.com/cyappucinnooo?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==">Instagram</a>
+                            </p>
+                    </div>
+
+                    <div class="member-card">
+                        <div class="member-avatar"><img src="avatar test.jfif" alt="Foto Ali Fikri" class="avatar-img"></div>
+                        <h4>Ravif Reihan A.</h4>
+                        <p style="font-size: 0.85rem; color: #07672d;">
+                            Kerangka (HTML)
+                            </p>
+                        <p style="font-size: 0.85rem; color: #666;">
+                            <a href="https://www.instagram.com/reihandoangs/?utm_source=ig_web_button_share_sheet">Instagram</a>
+                            </p>
+                    </div>
+                </div>
+            </div>
+            <div class="vision-mission">
+                <div style="text-align: left;">
+                    <h3>Visi Kami</h3>
+                    <p>Menciptakan generasi yang memandang kesehatan sebagai bentuk <em>self-love</em> (kasih sayang pada diri sendiri), bukan sebuah beban harian.</p>
+                </div>
+                <div style="text-align: left;">
+                    <h3>Misi Kami</h3>
+                    <p>Menyediakan ekosistem pendukung yang memudahkan siapapun untuk memulai, bertahan, dan menikmati transisi gaya hidup sehat secara bertahap.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-brand">
+                <img src="LOGO ICB CN.jpg" alt="Logo SMK ICB" class="footer-logo">
+            </div>
+            <ul class="footer-nav">
+                <li><a href="index.html">Beranda</a></li>
+                <li><a href="tentang.html">Tentang</a></li>
+                <li><a href="layanan.html">Layanan</a></li>
+            </ul>
+            <div class="footer-title-side">
+                <p class="footer-title-text">SehatIfy</p>
+                <p class="footer-tagline">Student Today Leader Tomorrow</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            &copy; 2026 SehatIfy - Kelompok 5.
+        </div>
+    </footer>
+
+</body>
+</html>

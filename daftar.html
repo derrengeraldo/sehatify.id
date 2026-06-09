@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pendaftaran - SehatIfy</title>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="cssdaftar.css">
+</head>
+<body>
+
+    <header>
+        <div class="logo-text">SehatIfy</div>
+        <ul class="nav-links">
+            <li><a href="index.html">Beranda</a></li>
+            <li><a href="tentang.html">Tentang</a></li>
+            <li><a href="layanan.html">Layanan</a></li>
+        </ul>
+        <a href="daftar.html" class="btn-primary">Daftar Sekarang</a>
+    </header>
+
+    <section class="register-section">
+        <div class="register-container">
+            <h2>Mulai Perjalanan Sehatmu 🌿</h2>
+            <p>Isi biodata singkat di bawah ini untuk bergabung dengan ekosistem SehatIfy.</p>
+
+            <form action="#" method="POST" class="form-biodata" id="formDaftar">
+                <div class="form-group">
+                    <label for="namaLengkap">Nama Lengkap</label>
+                    <input type="text" id="namaLengkap" required placeholder="Masukkan nama lengkapmu">
+                </div>
+
+                <div class="form-group">
+                    <label for="umur">Umur (Tahun)</label>
+                    <input type="number" id="umur" required placeholder="Contoh: 16" min="10" max="100">
+                </div>
+
+                <div class="form-group">
+                    <label for="gender">Jenis Kelamin</label>
+                    <select id="gender" required>
+                        <option value="" disabled selected>Pilih jenis kelamin</option>
+                        <option value="Laki-laki">Laki-laki</option>
+                        <option value="Perempuan">Perempuan</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="tujuanSehat">Target/Tujuan Utamamu</label>
+                    <select id="tujuanSehat" required>
+                        <option value="" disabled selected>Apa fokus kesehatanmu?</option>
+                        <option value="Mengatur Pola Makan">Mengatur Pola Makan Sehat</option>
+                        <option value="Kesehatan Mental">Menenangkan Pikiran (Mindfulness)</option>
+                        <option value="Olahraga Rutin">Mulai Rutinitas Olahraga</option>
+                        <option value="Gaya Hidup Seimbang">Menjaga Keseimbangan Hidup</option>
+                    </select>
+                </div>
+
+                <button type="submit" class="btn-submit-form">Kirim Biodata</button>
+            </form>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-bottom">
+            &copy; 2026 SehatIfy - Formulir Langkah Awal Kelompok 5.
+        </div>
+    </footer>
+
+    <script>
+        // Efek pesan sukses kasual saat form dikirim
+        document.getElementById('formDaftar').addEventListener('submit', function(e) {
+            e.preventDefault(); // Mencegah halaman reload
+            const nama = document.getElementById('namaLengkap').value;
+            alert(`Selamat bergabung, ${nama}! Biodatamu berhasil disimpan di SehatIfy. Yuk mulai langkah kecilmu hari ini! ✨`);
+            window.location.href = "index.html"; // Balik ke beranda setelah klik OK
+        });
+    </script>
+</body>
+</html>
